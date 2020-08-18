@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Change Name') {
+      steps {
+        buildName '${SVNREV}'
+      }
+    }
+
   }
 }
